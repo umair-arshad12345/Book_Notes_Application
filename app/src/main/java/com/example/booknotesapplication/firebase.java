@@ -46,6 +46,7 @@ public class firebase {
             @Override
             public void onSuccess(AuthResult authResult) {
                 Intent i = new Intent(ctx, Books_List.class);
+                Toast.makeText(ctx, "Login Success", Toast.LENGTH_SHORT).show();
                 ctx.startActivity(i);
             }
         });
@@ -57,4 +58,3 @@ public class firebase {
         }
     }
 }
-

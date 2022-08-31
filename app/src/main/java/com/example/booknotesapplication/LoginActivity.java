@@ -38,7 +38,16 @@ public class LoginActivity extends AppCompatActivity {
         Login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fb.Login(email,password);
+                String email = Email_text.getText().toString();
+                String password = Password_text.getText().toString();
+                if (email.isEmpty() && password.isEmpty()){
+                    Toast.makeText(LoginActivity.this, "Please Enter Email and Password", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    fb.Login(email, password);
+                    Toast.makeText(LoginActivity.this, "Loginn", Toast.LENGTH_SHORT).show();
+                }
+                //   fb.Login(email,password);
               //  Intent intent=new Intent(LoginActivity.this,Books_List.class);
               //  startActivity(intent);
             }
