@@ -31,7 +31,7 @@ public class register_Activity extends AppCompatActivity {
                     Toast.makeText(register_Activity.this, "Not Valid", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    fb.Login(email, password);
+                    fb.Signup(email, password);
                     Toast.makeText(register_Activity.this, "Registerr", Toast.LENGTH_SHORT).show();
                 }
             }

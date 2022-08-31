@@ -22,16 +22,16 @@ public class Book_listview extends AppCompatActivity {
         ImageView Edit_button = findViewById(R.id.Edit_button);
         LayoutInflater inflater = LayoutInflater.from(this);
         Button add = findViewById(R.id.add_new_book_button);
+        Toast.makeText(Book_listview.this, "Started", Toast.LENGTH_SHORT).show();
 
-        Edit_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ImageView edit = l.findViewById(R.id.Edit_button);
-                Intent intent = new Intent(Book_listview.this,Content.class);
-                startActivity(intent);
-                Toast.makeText(Book_listview.this, "Started", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        Edit_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ImageView edit = l.findViewById(R.id.Edit_button);
+//                Intent intent = new Intent(Book_listview.this,Content.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
     }

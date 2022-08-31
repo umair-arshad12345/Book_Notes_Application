@@ -47,7 +47,6 @@ public class LoginActivity extends AppCompatActivity {
                     fb.Login(email, password);
                     Toast.makeText(LoginActivity.this, "Loginn", Toast.LENGTH_SHORT).show();
                 }
-                //   fb.Login(email,password);
               //  Intent intent=new Intent(LoginActivity.this,Books_List.class);
               //  startActivity(intent);
             }
