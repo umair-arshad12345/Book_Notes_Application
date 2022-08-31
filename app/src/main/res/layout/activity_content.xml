@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#39393A"
+    tools:context=".Content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="sans-serif-black"
+          android:gravity="center"
+          android:layout_marginTop="20dp"
+          android:padding="7dp"
+          android:text="Book Notes"
+          android:textColor="@color/orange"
+          android:textSize="40dp" />
+
+      <TextView
+          android:id="@+id/Book_name_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:textColor="@color/orange"
+          android:textSize="24dp"
+          android:text="TextView" />
+
+      <EditText
+          android:id="@+id/editTextTextMultiLine"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginHorizontal="25dp"
+          android:layout_marginTop="8dp"
+          android:background="@drawable/round_button"
+          android:ems="10"
+          android:gravity="start|top"
+          android:hint="Write Text here"
+          android:inputType="textMultiLine"
+          android:minLines="20"
+          android:padding="12dp"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          android:textSize="20dp"
+          tools:layout_editor_absoluteX="117dp"
+          tools:layout_editor_absoluteY="128dp" />
+
+      <Button
+          android:id="@+id/Save_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="10dp"
+          android:text="Save" />
+  </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
